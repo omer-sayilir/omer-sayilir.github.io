@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>omer sayilir - Senior Software Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Consolas', monospace;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .terminal-header {
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .terminal-prompt::before {
+            content: "$ ";
+            color: #00ff00;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .code-block {
+            background-color: #2a2a2a;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: #2a2a2a;
+            padding: 5px 10px;
+            border-radius: 3px;
+            border: 1px solid #00ff00;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .contact-info a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: #fff;
+        }
+
+        .project {
+            margin-bottom: 1rem;
+        }
+
+        .blink {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="terminal-header">
+            <div class="terminal-prompt">whoami</div>
+            <h1>Omer SAYILIR</h1>
+            <p>software developer | coding passioner | Java lover but extremely curious about other technologies</p>
+            <div class="contact-info">
+                <a href="mailto:omer@sayilir.net"><i class="fas fa-envelope"></i> omer@sayilir.net</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Turkey</a>
+                <a href="https://www.linkedin.com/in/omer-sayilir/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/omer-sayilir"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="terminal-prompt">cat about.txt</div>
+            <div class="code-block">
+                A dedicated and results-driven software developer with extensive experience in both frontend and backend development. 
+                Specialized in Java, Spring Boot, Node.js, and React.js. Proven track record in leading development teams and 
+                delivering complex software solutions. Strong expertise in database management including PostgreSQL, MySQL, 
+                MsSQL, and Oracle.
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="terminal-prompt">ls skills/</div>
+            <div class="skills">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Spring Boot</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">MsSQL</span>
+                <span class="skill-tag">Oracle</span>
+                <span class="skill-tag">RabbitMQ</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Git</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="terminal-prompt">cat current_position.txt</div>
+            <div class="code-block">
+                <h3>Kolaysoft AS (2020 - Present)</h3>
+                <p>Senior Java Developer | Team Lead</p>
+                <ul>
+                    <li>Leading development teams for multiple projects</li>
+                    <li>Designing and implementing scalable backend solutions</li>
+                    <li>Mentoring team members and ensuring best practices</li>
+                    <li>Managing complex database architectures</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="terminal-prompt">ls projects/</div>
+            <div class="code-block">
+                <div class="project">
+                    <h4>PEYK Human Resource Management System</h4>
+                    <p>Tech Stack: Java, Spring Boot, MySQL, PostgreSQL, React.js, RabbitMQ</p>
+                </div>
+                <div class="project">
+                    <h4>Arabulucu (Arbitrary Procedure Management)</h4>
+                    <p>Tech Stack: Node.js, React.js, TypeScript, PostgreSQL, Jitsi</p>
+                </div>
+                <div class="project">
+                    <h4>E-Katılım (Creative Idea Management)</h4>
+                    <p>Tech Stack: Nest.js, React.js, TypeScript, Redux, TypeORM, MsSQL</p>
+                </div>
+                <div class="project">
+                    <h4>Hayatın Ritmi (Life Coaching Platform)</h4>
+                    <p>Tech Stack: Node.js, React.js, PostgreSQL, Flutter, Jitsi</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="terminal-prompt">cat education.txt</div>
+            <div class="code-block">
+                <p>Master of Science - Electrical and Electronics Engineering</p>
+                <p>Gazi University, Ankara (2001)</p>
+                <br>
+                <p>Bachelor's Degree - Electrical and Electronics Engineering</p>
+                <p>Fırat University, Elazığ (1997)</p>
+                <br>
+                <p>Bachelor's Degree - International Relations</p>
+                <p>Anadolu University, Eskişehir (2015)</p>
+            </div>
+        </section>
+
+        <footer>
+            <p class="terminal-prompt">
+                <span class="blink">█</span>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
